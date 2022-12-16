@@ -20,4 +20,8 @@
 		<center><img src="equations/statistic.png" width="250px"></center>
 		<p>where <code>p_i, n_i</code> are the positives and negatives in partition <code>T_i</code>. The main idea is that S is distributed (if the class is irrelevant) according to a chi-squared distribution with <code>m-1</code> degrees of freedom.</p>
 		<p>Now we must compute the p-value. This is the probability of observing a value X at least as extreme as S coming from the distribution. To find that, we compute <code>P(X >= S)</code>. The test is passed if the p-value is smaller than some threshold. Remember, the smallest that probability is, the more unlikely it is that S comes from a chi-squared distribution and consequently, that T is irrelevant to the class.</p>
+        <br>
+        <br>
+
+        Usage: python q1_classifier.py -p <pvalue> -f1 <train_dataset> -f2 <test_dataset> -o <output_file> -t <decision_tree>
 		
