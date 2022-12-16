@@ -15,9 +15,9 @@
 		<h4>Stopping Criterion: Chi-squared criterion</h4>
 		<p>What about split stopping? Suppose that the attribute that we want to split on is irrelevant. Then we would expect the positive and negative examples (labels 1 and 0) to be distributed according to a specific distribution. Suppose that splitting on attribute T, will produce sets <code>{T_i} where i = 1 to m</code></p>
 		<p>Let p, n denote the number of positive and negative examples that we have in our dataset (not the whole set, the remaining one that we work on at this node). Let (N is the total number of examples in the current dataset):</p>
-		<center><img src="project05/pn_samples.png" width="100px"></center>
+		<center><img src="equations/pn_samples.png" width="100px"></center>
 		<p>be the expected number of positives and negatives in each partition, if the attribute is irrelevant to the class. Then the statistic of interest is:</p>
-		<center><img src="project05/statistic.png" width="250px"></center>
+		<center><img src="equations/statistic.png" width="250px"></center>
 		<p>where <code>p_i, n_i</code> are the positives and negatives in partition <code>T_i</code>. The main idea is that S is distributed (if the class is irrelevant) according to a chi-squared distribution with <code>m-1</code> degrees of freedom.</p>
 		<p>Now we must compute the p-value. This is the probability of observing a value X at least as extreme as S coming from the distribution. To find that, we compute <code>P(X >= S)</code>. The test is passed if the p-value is smaller than some threshold. Remember, the smallest that probability is, the more unlikely it is that S comes from a chi-squared distribution and consequently, that T is irrelevant to the class.</p>
 		
