@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.7-brightgreen)
 ![ML](https://img.shields.io/badge/Artifiial-Intelligence-green)
 								   
-								   <h1> </h1>
+<code>								   
     <p>The project is based on a task posed in KDD Cup 2000. It involves mining click-stream data collected from Gazelle.com, which sells legware products. Your task is to determine: Given a set of page views, will the visitor view another page on the site or will he leave?</p>
     <p>The data set given to you is in a different form than the original. In particular it has discretized numerical values obtained by partitioning them into 5 intervals of equal frequency. This way, we get a data set where for each feature, we have a finite set of values. These values are mapped to integers, so that the data is easier for you to handle</p>
 		<h4><u>Dataset</u></h4>
@@ -27,6 +27,6 @@
 		<p>Now we must compute the p-value. This is the probability of observing a value X at least as extreme as S coming from the distribution. To find that, we compute <code>P(X >= S)</code>. The test is passed if the p-value is smaller than some threshold. Remember, the smallest that probability is, the more unlikely it is that S comes from a chi-squared distribution and consequently, that T is irrelevant to the class.</p>
         <br>
         <br>
-
+</code>
         Usage: python q1_classifier.py -p <pvalue> -f1 <train_dataset> -f2 <test_dataset> -o <output_file> -t <decision_tree>
 		
