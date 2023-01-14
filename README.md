@@ -1,4 +1,5 @@
-Clickstream Mining with Decision Trees
+# Clickstream Mining with Decision Trees
+
 ![Python](https://img.shields.io/badge/Python-3.7-brightgreen)
 ![ML](https://img.shields.io/badge/Artifiial-Intelligence-green)
 
